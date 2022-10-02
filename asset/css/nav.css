@@ -15,7 +15,7 @@
 }
 
 #nav-bar #logo img{
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 #nav-bar>ul {
@@ -35,7 +35,7 @@
     position: relative;
 }
 #nav-bar .nav-logo {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
     position: relative;
 }
 

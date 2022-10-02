@@ -12,7 +12,7 @@
     <!-- JS, by TP -->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
     <script src="../2022_Tongji_China/asset/js/page-func.js"></script>
-</head>
+    </head>
 <body>
 
 <!-- 菜单栏 -->
@@ -22,62 +22,38 @@
         <!-- logo -->
         <li class="nav-logo">
             <div id="logo">
-                <img src="../2022_Tongji_China/asset/img/page-pet.png" style="height: 50px">
+                <img src="../2022_Tongji_China/asset/img/logo.png" style="height: 50px">
             </div>
         </li>
         <!-- 一级菜单 -->
         <li class="nav-litem">
-            <a href="{{ url_for('pages', page='description')}}">Home</a>
+            <a href="../2022_Tongji_China/index.html">Home</a>
         </li>
-
         <li class="nav-litem">
             <a>Project</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="{{ url_for('pages', page='description')}}">Description</a></li>
-                <li><a href="{{ url_for('pages', page='design')}}">Design</a></li>
-                <li><a href="{{ url_for('pages', page='engineering')}}">Engineering</a></li>
-                <li><a href="{{ url_for('pages', page='model')}}">Model</a></li>
-                <li><a href="{{ url_for('pages', page='contribution')}}">Contribution</a></li>
-
-
+                <li><a href="../2022_Tongji_China/pages/background.html">Background</a></li>
+                <li><a href="../2022_Tongji_China/pages/models.html">Models</a></li>
+                <li><a href="../2022_Tongji_China/pages/supplementary.html">Supplementary Information</a></li>
+                <li><a href="../2022_Tongji_China/pages/report.html">Report</a></li>
             </ul>
         </li>
         <li class="nav-litem">
-            <a>Lab</a>
+            <a>Documentation</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="{{ url_for('pages', page='description')}}">Experiment Protocol</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Results</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Parts</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Proof of Concept</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Safety</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Notebook</a></li>
+                <li><a href="../2022_Tongji_China/pages/protocols.html">Protocols</a></li>
+                <li><a href="../2022_Tongji_China/pages/notebook.html">Notebook</a></li>
             </ul>
         </li>
-
-        <li class="nav-litem">
-            <a>Human Practices</a>
-            <!-- 二级菜单 -->
-            <ul>
-                <li><a href="{{ url_for('pages', page='description')}}">Integrated HPs</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Implementation</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Education & Communication</a></li>
-
-            </ul>
-        </li>
-
         <li class="nav-litem">
             <a>Team</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="{{ url_for('pages', page='description')}}">Members</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Collaborations</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Partnership</a></li>
-                <li><a href="{{ url_for('pages', page='description')}}">Attribution</a></li>
+                <li><a href="../2022_Tongji_China/pages/members.html">Members</a></li>
             </ul>
         </li>
-
     </ul>
 </div>
 

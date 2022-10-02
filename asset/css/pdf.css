@@ -1,0 +1,20 @@
+html{
+    overflow-y: hidden;
+    font-size: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+/* pdf边框 */
+#embed-border{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+}
+
+#plugin{
+    min-width: 100%;
+}
