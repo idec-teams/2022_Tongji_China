@@ -1,0 +1,34 @@
+    /* 字体注册 */
+    @font-face {
+        font-family: 'Gilmer';
+        src: url('../font/Gilmer-Font/Gilmer Regular.otf');
+    }
+    @font-face {
+        font-family: 'Gilmer Outline';
+        src: url('../font/Gilmer-Font/Gilmer Outline.otf');
+    }
+    @font-face {
+        font-family: 'Gilmer Light';
+        src: url('../font/Gilmer-Font/Gilmer Light.otf');
+    }
+
+    @font-face {
+        font-family: 'Gilmer Bold';
+        src: url('../font/Gilmer-Font/Gilmer Bold.otf');
+    }
+
+    @font-face {
+        font-family: 'Gilmer Medium';
+        src: url('../font/Gilmer-Font/Gilmer Medium.otf');
+    }
+
+    /* 基本布局 */
+    div{
+        font-family: 'Gilmer';
+    }
+
+    body{
+        top: 0;
+        margin: 0;
+        /*scroll-behavior: smooth;*/
+    }

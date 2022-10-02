@@ -1,0 +1,65 @@
+/* 页面导航栏 */
+#skip-bar{
+    padding-top: 2%;
+    background-color: rgb(246, 246, 246);
+    color: #868686;
+    display: flex;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 25%;
+    line-height: 2.2rem;
+    font-size: 1rem;
+}
+#skip-bar li{
+    list-style: none;
+    list-style-position: unset;
+}
+.bar-rank1{
+    display: flex;
+    align-items: center;
+    font-family: 'Gilmer Light';
+}
+.bar-rank2{
+    display: flex;
+    align-items: center;
+    font-family: 'Gilmer Light';
+
+}
+.bar-rank1:hover{
+    transition: .3s;
+    font-size: 1.1rem;
+    color: #7F93C5;
+    font-family: 'Gilmer';
+}
+.bar-rank2:hover{
+    transition: .3s;
+    color: #7F93C5;
+    font-family: 'Gilmer';
+    font-size: 1rem;
+
+}
+
+.emphasis-rank1{
+    transition: .5s;
+    position: relative;
+    width: 0;
+    height: 100%;
+    border: 0.3rem solid transparent;
+    border-left: 0.4rem solid #7F93C5;
+    display: none;
+}
+
+.emphasis-rank2{
+    transition: .5s;
+    width: 0;
+    height: 100%;
+    border: 0.3rem solid transparent;
+    border-left: 0.45rem solid #7F93C5;
+    display: none;
+}
+
+
+
+
