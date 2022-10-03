@@ -88,14 +88,12 @@
     line-height: 1.5rem;
 }
 
-.content-imgbox img{
+.image-single{
     max-width: 100%;
 }
 
-.content-img-secondary {
-    float: left;
-    margin: 2.5%;
-    max-width: 45%;
+.image-double{
+    max-width: 47.5%;
 }
 
 /* 参考文献上标 */
