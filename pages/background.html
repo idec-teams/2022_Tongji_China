@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS, by TP -->
-    <link href="../2022_Tongji_China/asset/css/nav.css" rel="stylesheet">
-    <link href="../2022_Tongji_China/asset/css/basic.css" rel="stylesheet">
-    <link href="../2022_Tongji_China/asset/css/content.css" rel="stylesheet">
-    <link href="../2022_Tongji_China/asset/css/skip.css" rel="stylesheet">
+    <link href="../asset/css/nav.css" rel="stylesheet">
+    <link href="../asset/css/basic.css" rel="stylesheet">
+    <link href="../asset/css/content.css" rel="stylesheet">
+    <link href="../asset/css/skip.css" rel="stylesheet">
     <!-- JS, by TP -->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
-    <script src="../2022_Tongji_China/asset/js/page-func.js"></script>
+    <script src="../asset/js/page-func.js"></script>
     </head>
 <body>
 
@@ -22,41 +22,167 @@
         <!-- logo -->
         <li class="nav-logo">
             <div id="logo">
-                <img src="../2022_Tongji_China/asset/img/logo.png" style="height: 50px">
+                <img src="../asset/img/logo.png" style="height: 50px">
             </div>
         </li>
         <!-- 一级菜单 -->
         <li class="nav-litem">
-            <a href="../2022_Tongji_China/index.html">Home</a>
+            <a href="../index.html">Home</a>
         </li>
         <li class="nav-litem">
             <a>Project</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="../2022_Tongji_China/pages/background.html">Background</a></li>
-                <li><a href="../2022_Tongji_China/pages/models.html">Models</a></li>
-                <li><a href="../2022_Tongji_China/pages/supplementary.html">Supplementary Information</a></li>
-                <li><a href="../2022_Tongji_China/pages/report.html">Report</a></li>
+                <li><a href="../pages/background.html">Background</a></li>
+                <li><a href="../pages/models.html">Models</a></li>
+                <li><a href="../pages/supplementary.html">Supplementary Information</a></li>
+                <li><a href="../pages/report.html">Report</a></li>
             </ul>
         </li>
         <li class="nav-litem">
             <a>Documentation</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="../2022_Tongji_China/pages/protocols.html">Protocols</a></li>
-                <li><a href="../2022_Tongji_China/pages/notebook.html">Notebook</a></li>
+                <li><a href="../pages/protocols.html">Protocols</a></li>
+                <li><a href="../pages/notebook.html">Notebook</a></li>
             </ul>
         </li>
         <li class="nav-litem">
             <a>Team</a>
             <!-- 二级菜单 -->
             <ul>
-                <li><a href="../2022_Tongji_China/pages/members.html">Members</a></li>
+                <li><a href="../pages/members.html">Members</a></li>
             </ul>
         </li>
     </ul>
 </div>
 
+<!-- 主页背景 -->
+<div id="intro-bc">
+    <div id="main-title">Description</div>
+  </div>
+  <div id="cutoff"></div>
+  
+  <div id="content">
+  
+  
+    <!--  页面导航栏  -->
+    <div id="skip-bar">
+      <ul>
+        <li class="bar-rank1" onclick="jumpTo('#proj-bc')"><div class="emphasis-rank1"></div>Project Background</li>
+        <li class="bar-rank1" onclick="jumpTo('#application')"><div class="emphasis-rank1"></div>Application</li>
+        <li class="bar-rank1" onclick="jumpTo('#reference')"><div class="emphasis-rank1"></div>References</li>
+  
+      </ul>
+    </div>
+    <!-- 页面吉祥物 -->
+    <div id="page-pet">
+      <img src="../asset/img/page-pet.png">
+    </div>
+  
+    <!-- 正文 -->
+    <div id="text-content">
+      <div id="proj-bc">
+        <div class="page-title-rank1">Project Background</div>
+        <p>
+            Bromelain is a group of thiol hydrolytic proteases extracted from the tropical plant pineapple. Bromelain mainly 
+            exists in the fruit, bud, leaf and stem of pineapple, with a molecular weight of 33000. It belongs to the papain 
+            family of cysteine proteases, the proteolytic activity of bromelain is approximately ten times higher than that 
+            of papain. Its enzymatic activity is dependent on the thiol group of a cysteine residue within its active site. 
+            Currently available bromelain extracts are composed of 80% stem bromelain, 10% fruit bromelain, and 5% other 
+            components. Bromelain has a variety of properties, including anti-cancer activity, anti-inflammatory effect, 
+            antimicrobial effect, antibiotic potentiation, skin protection, postsurgery recovery and so on[1]. Therefore, 
+            it has a wide range of applications in the medical and food fields. 
+        </p>
+        <div class="content-imgbox">
+            <img src="../asset/img/background-1.png">
+            <div class="img-text">structural formula of bromelain</div>
+        </div>
+        <p>
+            However, the traditional production technology of bromelain has the problems of high cost, low enzyme activity 
+            and low yield because it takes pineapple as raw material. At the same time, the processing process of this 
+            traditional technology will bring some environmental resources problems. For example, the yield of bromelain 
+            is highly dependent on the yield of pineapple, and its source is not stable; Using agricultural products to 
+            produce such high value-added products is a kind of occupation and waste of land resources; Moreover, the 
+            production process may pollute the environment, which is not in line with sustainable development.[2]
+        </p>
+      </div>
+      <div id="application">
+        <div class="page-title-rank1">Application</div>
+        <p>
+            Bromelain can be used in many scenarios, like medical, food fields and fodder processing. Due to the Local 
+            problem of shortage of protein feed resources and low efficiency of protein utilization of livestock and 
+            poultry in China[3], we choose fodder processing as the main application scenario of our study.
+        </p>
+        <div class="content-imgbox">
+            <div class="content-img-secondary">
+                <img src="../asset/img/background-2.png">
+            </div>
+            <div class="content-img-secondary">
+                <img src="../asset/img/background-3.png">
+            </div>
+            <div class="img-text">structural formula of bromelain</div>
+        </div>
+        <p>
+            Bromelain is a plant protease, which can convert protein in feed into peptides and small peptides easily 
+            absorbed by animals, improve the conversion rate of feed, so as to reduce the pollution of breeding industry to 
+            the environment. Bromelain also has a certain therapeutic effect on diarrhea caused by pathogenic bacteria, 
+            avoiding the negative effects of antibiotics, improving the growth performance of animals, and resisting the 
+            damage of parasites to animals. And the production of bromelain resources are rich, has the potential to 
+            vigorously develop and use, is an ideal antibiotic substitute feed additives.[4,5]
+        </p>
+      </div>
+
+      <div id="references">
+        <div class="page-title-rank1">References</div>
+        <p>
+            [1] Hikisz P, Bernasinska-Slomczewska J. Beneficial Properties of Bromelain. Nutrients. 2021 Nov 29;13(12):
+            4313. doi: 10.3390/nu13124313. PMID: 34959865; PMCID: PMC8709142.
+        </p>
+        <p>
+            [2] Fouz N, Amid A, Hashim YZ. Cytokinetic study of MCF-7 cells treated with commercial and recombinant 
+            bromelain. Asian Pac J Cancer Prev. 2014 Jan;14(11):6709-14. doi: 10.7314/apjcp.2013.14.11.6709. PMID: 24377593.
+        </p>
+        <p>
+            [3] 陶莎,张峭,张晶.2021年饲料市场形势、展望和对策建议[J].中国畜牧杂志,2022,58(05):269-272.DOI:10.19556/j.0258-7033.
+            20220221-03.
+        </p>
+        <p>
+            [4] 王修启,梁少杰,周加义,高春起,严会超.菠萝蛋白酶在饲料上的研究进展及应用前景[J].饲料工业,2016,37(04):1-4.DOI:10.
+            13302/j.cnki.fi.2016.04.001.
+        </p>
+        <p>
+            [5] Dutta S, Bhattacharyya D. Enzymatic, antimicrobial and toxicity studies of the aqueous extract of Ananas 
+            comosus (pineapple) crown leaf. J Ethnopharmacol. 2013 Nov 25;150(2):451-7. doi: 10.1016/j.jep.2013.08.024. 
+            Epub 2013 Sep 26. PMID: 24076462.
+        </p>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // 页面自定义参数
+    document.page_params = {
+      'nav-height': $('#nav-bar')[0].offsetHeight,
+      'content-st': $('#content')[0].offsetTop,
+      'skip-params':{'step': 5, 'time-interval': 30, 'min-step':1}
+    }
+  
+    // 导航栏浮动
+    attachSkipBarFlow('.bar-rank1');
+    attachSkipBarFlow('.bar-rank2');
+  
+    // 导航栏布局变化
+    window.onscroll=function(){
+      // 监听布局变化
+      changeSkipBarLayout('#skip-bar', '#text-content');
+      attachEmphasis('.page-title-rank1', '.bar-rank1');
+      attachEmphasis('.page-title-rank2', '.bar-rank2');
+    }
+  </script>
 
 </body>
 </html>

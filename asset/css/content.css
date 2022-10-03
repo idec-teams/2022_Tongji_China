@@ -61,6 +61,7 @@
 
 /* 页面内容（除菜单栏和页面导航栏） */
 #content{
+    text-align: justify;
     display: flex;
 }
 
@@ -71,7 +72,7 @@
 }
 
 #text-content p{
-    text-indent: 1rem;
+    text-indent: 0rem;
     font-size: 1.1rem;
     line-height: 1.6rem;
     width: 90%;
@@ -90,6 +91,13 @@
 .content-imgbox img{
     max-width: 100%;
 }
+
+.content-img-secondary {
+    float: left;
+    margin: 2.5%;
+    max-width: 45%;
+}
+
 /* 参考文献上标 */
 #text-content .ref-tag{
     font-size:0.2rem;
