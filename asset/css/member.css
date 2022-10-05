@@ -42,13 +42,13 @@
 
 .bottom-text {
     position: inherit;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 1px;
     text-align: right;
     padding-bottom: 2%;
     padding-right: 4%;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* 渐入渐出动画 */
