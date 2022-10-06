@@ -1,0 +1,67 @@
+#home-bg{
+    display: flex;
+    background-color: burlywood;
+    height: 800px;
+    background-image: url('../img/home-bro-bg.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#home-cutoff{
+    margin: 2% 5%;
+    border-top: rgb(203, 203, 203) 2px dashed;
+}
+
+.home-item-left{
+    text-align: left;
+    display: flex;
+    margin: 3% 5%;
+    flex-direction: row;
+    /* border: #7F93C5 1px solid; */
+}
+
+.home-item-right{
+    text-align: left;
+    display: flex;
+    margin: 3% 5%;
+    flex-direction: row;
+    /* border: #7F93C5 1px solid; */
+}
+
+.item-title{
+    font-family: 'Gilmer Bold';
+    color: #7F93C5;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.img-in-item{
+    width: 40%;
+}
+
+.img-in-item img{
+    width: 100%;
+}
+
+.text-in-item-left{
+    margin: 1% 2%;
+    align-self:center;
+    padding-right: 3%;
+    width: 60%;
+}
+
+.text-in-item-right{
+    margin: 1% 2%;
+    align-self:center;
+    padding-left: 3%;
+    width: 60%;
+}
+
+.item-text{
+    padding-top: 3px;
+    color:#868686;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 1% 0%;
+}
