@@ -8,10 +8,12 @@
     <link href="../asset/css/nav.css" rel="stylesheet">
     <link href="../asset/css/basic.css" rel="stylesheet">
     <link href="../asset/css/content.css" rel="stylesheet">
-    <link href="../asset/css/skip.css" rel="stylesheet">
-    <!-- JS, by TP -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
-    <script src="../asset/js/page-func.js"></script>
+    <!-- CSS, by FY -->
+    <link href="../asset/css/page-nav.css" rel="stylesheet">
+
+    <!-- Outer File -->
+    <link href="../asset/bootstrap.min.css">
+    <script src="../asset/jquery-3.6.1.min.js"></script>
     </head>
 <body>
 
@@ -67,14 +69,13 @@
   
   
     <!--  页面导航栏  -->
-    <div id="skip-bar">
-      <ul>
-        <li class="bar-rank1" onclick="jumpTo('#proj-bc')"><div class="emphasis-rank1"></div>Project Background</li>
-        <li class="bar-rank1" onclick="jumpTo('#application')"><div class="emphasis-rank1"></div>Application</li>
-        <li class="bar-rank1" onclick="jumpTo('#references')"><div class="emphasis-rank1"></div>References</li>
-  
-      </ul>
-    </div>
+    <nav id="navbar-igem" class="my-navbar">
+      <nav id="nav-container" class="my-nav-rank1">
+        <a class="nav-link my-bar-rank1" href="#proj-bc">Project Background</a>
+        <a class="nav-link my-bar-rank1" href="#application">Application</a>
+        <a class="nav-link my-bar-rank1" href="#references">References</a>
+      </nav>
+    </nav>
     <!-- 页面吉祥物 -->
     <div id="page-pet">
       <img src="../asset/img/page-pet.png">
@@ -160,27 +161,8 @@
       </div>
     </div>
   </div>
-  
-  <script>
-    // 页面自定义参数
-    document.page_params = {
-      'nav-height': $('#nav-bar')[0].offsetHeight,
-      'content-st': $('#content')[0].offsetTop,
-      'skip-params':{'step': 5, 'time-interval': 30, 'min-step':1}
-    }
-  
-    // 导航栏浮动
-    attachSkipBarFlow('.bar-rank1');
-    attachSkipBarFlow('.bar-rank2');
-  
-    // 导航栏布局变化
-    window.onscroll=function(){
-      // 监听布局变化
-      changeSkipBarLayout('#skip-bar', '#text-content');
-      attachEmphasis('.page-title-rank1', '.bar-rank1');
-      attachEmphasis('.page-title-rank2', '.bar-rank2');
-    }
-  </script>
 
+    <!-- JS, by FY -->
+    <script src="../asset/js/page-nav.js"></script>
 </body>
 </html>

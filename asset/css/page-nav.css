@@ -1,0 +1,49 @@
+/* 页面内标题 */
+html{
+    scroll-padding-top:56px;
+}
+
+.my-navbar {
+    width: 25%;
+    position: relative;
+    background-color:  rgb(246, 246, 246);
+    font-size: 1rem;
+    scroll-padding-top: 55px;
+}
+
+/* 标题容器 */
+.my-nav-rank1 {
+    line-height: 1.5rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+.my-nav-rank2 {
+    line-height: 1.0rem;
+    padding-left: 2rem;
+}
+
+/* 标题栏 */
+.my-bar-rank1,.my-bar-rank2 {
+    display: flex;
+    color: #868686;
+    padding: 0.3rem;
+    text-decoration: none;
+    font-family: 'Gilmer Light';
+}
+
+.my-bar-rank1:hover,.my-bar-rank2:hover,.awake {
+    display: list-item;
+    transition: .3s;
+    color: #7F93C5;
+    font-size: 1.1rem;
+    font-family: 'Gilmer';
+}
+
+.my-bar-rank1:hover::marker,.my-bar-rank2:hover::marker,.awake::marker {
+    color: #7F93C5;
+    content: '▶';
+}
