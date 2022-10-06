@@ -90,9 +90,9 @@ $(function(){
     $(".nav-link").click(function(){
         var id = $(this).attr('href').substring(1)
         $('body,html').animate({
-            scrollTop:$('#'+id)[0].offsetTop-$('#nav-bar').height()
+            scrollTop:$('#'+id)[0].offsetTop-$('#nav-bar').height()+10
         },500);
-        awakeCurrentNav()
+        AwakeNav(id)
     }
     )
 })
