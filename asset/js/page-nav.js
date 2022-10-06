@@ -1,16 +1,19 @@
+// 存储各导航条位置信息
+var dic = new Array();
+var page = document.documentElement || document.body  // 兼容IE
+
+// 刷新导航条位置信息
+function InitDic(){
+  var navBarHeight = $('#nav-bar').height()
+  dic.length = 0;
+  $('.nav-link').each(function(index){
+    var id = $(this).attr('href').substring(1)
+    dic.push([id , $("#"+id)[0].offsetTop - navBarHeight])
+  }
+  )
+}
+
 $(function(){
-    // 存储各导航条位置信息
-    var dic = new Array();
-    var page = document.documentElement || document.body  // 兼容IE
-    // 初始化导航条信息
-    function InitDic(){
-      var navBarHeight = $('#nav-bar').height()
-      $('.nav-link').each(function(index){
-        var id = $(this).attr('href').substring(1)
-        dic.push([id , $("#"+id)[0].offsetTop - navBarHeight])
-      }
-      )
-    }
     InitDic()
 
     // 激活当前菜单下导航条
@@ -32,7 +35,7 @@ $(function(){
     
     // 如果子菜单取消激活，则同时取消激活父级菜单
     $(".my-bar-rank2").mouseout(function(){
-        if(!$(this).parent().hasClass('tag')&&!$(this).siblings().hasClass('awake')&&!$(this).hasClass('awake'))
+        if(!$(this).parent().prev().hasClass('tag')&&!$(this).siblings().hasClass('awake')&&!$(this).hasClass('awake'))
         {
           $(this).parent().prev().removeClass('awake')
         }
@@ -63,8 +66,11 @@ $(function(){
       var tag = $("a[href='#"+id+"']")
       clear();
       tag.addClass('awake')
+      if(tag.next().hasClass('my-nav-rank2')){
+        tag.addClass('tag')
+      }
       if(tag.hasClass('my-bar-rank2')){
-        tag.parent().addClass('tag')
+        tag.parent().prev().addClass('tag')
         tag.parent().prev().addClass('awake')
       }
     }
@@ -96,3 +102,7 @@ $(function(){
     }
     )
 })
+
+$(window).resize(function() {  
+  InitDic()
+});
