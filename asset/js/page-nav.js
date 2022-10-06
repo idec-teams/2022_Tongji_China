@@ -14,7 +14,8 @@ function InitDic(){
 }
 
 $(function(){
-    InitDic()
+    // 页面加载好后初始化导航条位置信息
+    $(document).ready(function(){InitDic()})
 
     // 激活当前菜单下导航条
     function awakeCurrentNav(){
