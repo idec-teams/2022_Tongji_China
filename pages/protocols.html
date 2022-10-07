@@ -9,7 +9,10 @@
   <link href="../asset/css/nav.css" rel="stylesheet">
   <link href="../asset/css/basic.css" rel="stylesheet">
   <link href="../asset/css/content.css" rel="stylesheet">
+
+  <!-- CSS,by FY -->
   <link href="../asset/css/page-nav.css" rel="stylesheet">
+  <link href="../asset/css/loader.css" rel="stylesheet">
 
   <!-- Outer File -->
   <link href="../asset/bootstrap.min.css">
@@ -17,6 +20,31 @@
 </head>
 
 <body>
+
+  <!-- 页面加载动画 -->
+  <div id="loader">
+    <div aria-busy="true" aria-label="Loading" role="progressbar" class="loader-container">
+      <div class="swing">
+        <div class="swing-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="swing-r"></div>
+      </div>
+      <div class="loader-shadow">
+        <div class="shadow-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="shadow-r"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 菜单栏 -->
   <div id="nav-bar">
     <!-- 列表 -->
@@ -206,6 +234,7 @@
 
   <!-- JS, by FY -->
   <script src="../asset/js/page-nav.js"></script>
+  <script src="../asset/js/loader.js"></script>
 
 </body>
 

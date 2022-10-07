@@ -9,14 +9,36 @@
     <link href="../asset/css/nav.css" rel="stylesheet">
     <link href="../asset/css/basic.css" rel="stylesheet">
     <link href="../asset/css/content.css" rel="stylesheet">
-    <link href="../asset/css/skip.css" rel="stylesheet">
-    <!-- JS, by TP -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
-    <script src="../asset/js/page-func.js"></script>
+    
+    <!-- CSS, by FY -->
+    <link href="../asset/css/page-nav.css" rel="stylesheet">
+    <link href="../asset/css/loader.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- 页面加载动画 -->
+    <div id="loader">
+        <div aria-busy="true" aria-label="Loading" role="progressbar" class="loader-container">
+            <div class="swing">
+                <div class="swing-l"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="swing-r"></div>
+            </div>
+            <div class="loader-shadow">
+                <div class="shadow-l"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="shadow-r"></div>
+            </div>
+        </div>
+    </div>
     <!-- 菜单栏 -->
     <div id="nav-bar">
         <!-- 列表 -->
@@ -60,6 +82,8 @@
     </div>
 
 
+    <!-- JS, by FY -->
+    <script src="../asset/js/loader.js"></script>
 </body>
 
 </html>
