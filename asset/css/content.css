@@ -58,11 +58,15 @@
     font-size: 2rem;
     display: flex;
 }
+.lower-font-title{
+    font-size: 2rem;
+}
 
 /* 页面内容（除菜单栏和页面导航栏） */
 #content{
     text-align: justify;
     display: flex;
+    width: 90%;
 }
 
 /* 背景分割线 */
@@ -71,11 +75,14 @@
     background-color: #FFB202;
 }
 
-#text-content p{
+#text-content p,ol,li{
     text-indent: 0rem;
     font-size: 1.1rem;
     line-height: 1.6rem;
-    width: 90%;
+}
+
+#text-content li{
+    margin-top: 1%;
 }
 
 /* 图片内容 */

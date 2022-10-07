@@ -8,7 +8,7 @@ function InitDic(){
   dic.length = 0;
   $('.nav-link').each(function(index){
     var id = $(this).attr('href').substring(1)
-    dic.push([id , $("#"+id)[0].offsetTop - navBarHeight])
+    dic.push([id , $("#"+id)[0].offsetTop - navBarHeight - 30])
   }
   )
 }

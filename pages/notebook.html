@@ -8,10 +8,12 @@
     <link href="../asset/css/nav.css" rel="stylesheet">
     <link href="../asset/css/basic.css" rel="stylesheet">
     <link href="../asset/css/content.css" rel="stylesheet">
-    <link href="../asset/css/skip.css" rel="stylesheet">
-    <!-- JS, by TP -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
-    <script src="../asset/js/page-func.js"></script>
+    <!-- CSS, by FY -->
+    <link href="../asset/css/page-nav.css" rel="stylesheet">
+
+    <!-- Outer File -->
+    <link href="../asset/bootstrap.min.css">
+    <script src="../asset/jquery-3.6.1.min.js"></script>
     </head>
 <body>
 
@@ -57,6 +59,80 @@
     </ul>
 </div>
 
+<!-- 主页背景 -->
+<div id="intro-bc" style="background-image: url(../asset/img/notebook.jpg); background-size: 100% 250px;">
+    <div id="main-title" style="color: #16272F">Notebook</div>
+</div>
+<div id="cutoff"></div>
+<div id="content">
+  
+    <!--  页面导航栏  -->
+    <nav id="navbar-igem" class="my-navbar">
+      <nav id="nav-container" class="my-nav-rank1">
+        <a class="nav-link my-bar-rank1" href="#forwards">Forewords</a>
+        <a class="nav-link my-bar-rank1" href="#week1">Week 1: 9.3-9.9</a>
+        <a class="nav-link my-bar-rank1" href="#week2">Week 2: 9.10-9.16</a>
+        <a class="nav-link my-bar-rank1" href="#week3">Week 3: 9.17-9.23</a>
+        <a class="nav-link my-bar-rank1" href="#week4">Week 4: 9.24-9.30</a>
+        <a class="nav-link my-bar-rank1" href="#week5">Week 5: 10.1-10.7</a>
+      </nav>
+    </nav>
+    <!-- 页面吉祥物 -->
+    <div id="page-pet">
+      <img src="../asset/img/page-pet.png">
+    </div>
+  
+    <!-- 正文 -->
+    <div id="text-content">
+      <div id="forwards">
+        <div class="page-title-rank1">Forewords</div>
+        <p>
+            For the severe epidemic in Shanghai in the first half of the year and our school policy, our wet experiments stared very late. Therefore, the content of our experiment was greatly reduced and the experiment was carried out in a hurry. Our experiment was divided into three groups: wild-type (group 1), single mutant (group 2), double mutant (group 3). You can see what we have done below.
+        </p>
+      </div>
+      <div id="week1">
+        <div class="page-title-rank1 lower-font-title">Week 1: 9.3-9.9</div>
+        <p>
+            The plasmid containing the target gene of double mutant was transformed into E. coli BL21.
+        </p>
+      </div>
+      <div id="week2">
+        <div class="page-title-rank1 lower-font-title">Week 2: 9.10-9.16</div>
+        <p>
+            Liquid and solid LB medium were prepared.<br>
+            The plasmid containing the target gene of single mutant and the wild-type were transformed into E. coli BL21.            
+        </p>
+      </div>
+      <div id="week3">
+        <div class="page-title-rank1 lower-font-title">Week 3: 9.17-9.23</div>
+        <p>
+            The plasmids were transformed into E. coli BL21 again.<br>
+            The double mutant monoclonal strain was selected and cultured.<br>
+            The double mutant strain was induced to express bromelain by IPTG.
+        </p>
+      </div>
+      <div id="week4">
+        <div class="page-title-rank1 lower-font-title">Week 4: 9.24-9.30</div>
+        <p>
+            The monoclonal strains of single mutant and wild-type were selected and cultured.<br>
+            Both single mutant and wild-type strains were induced to express bromelain by IPTG.<br>
+            The bacterial solution induced by IPTG was collected, and the bacteria were cleaved by ultrasound.<br>
+            Bromelain was isolated and purified.<br>
+            The expression of bromelain was confirmed by SDS-PAGE.
+        </p>
+      </div>
+      <div id="week5">
+        <div class="page-title-rank1 lower-font-title">Week 5: 10.1-10.7</div>
+        <p>
+            Detected the activity and stability of double mutant bromelain.<br>
+            Single factor induction experiment of IPTG.<br>
+            Characterization experiment of soybean meal.
+        </p>
+      </div>
+    </div>
+  </div>
 
+    <!-- JS, by FY -->
+    <script src="../asset/js/page-nav.js"></script>
 </body>
 </html>
