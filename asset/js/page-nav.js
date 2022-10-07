@@ -75,6 +75,16 @@ $(function () {
     }
   }
 
+  // 点击链接跳转
+  $(".nav-link").click(function () {
+    var id = $(this).attr('href').substring(1)
+    $('body,html').animate({
+      scrollTop: $('#' + id)[0].offsetTop - $('#nav-bar').height() + 10
+    }, 500);
+    AwakeNav(id)
+  }
+  )
+
   // 导航条浮动
   window.onscroll = function () {
     // 导航条跟从页首浮动
@@ -90,19 +100,19 @@ $(function () {
     }
 
     // 导航条跟从页尾浮动
-    if (page.scrollTop+ $('#nav-bar').height()+55 +$('#nav-container').height() > $('footer')[0].offsetTop) {
-      if(!$('#nav-container').hasClass('my-nav-fadeOut')){
+    if (page.scrollTop + $('#nav-bar').height() + 55 + $('#nav-container').height() > $('footer')[0].offsetTop) {
+      if (!$('#nav-container').hasClass('my-nav-fadeOut')) {
         $('#nav-container').addClass('my-nav-fadeOut')
       }
-      if($('#nav-container').hasClass('my-nav-fadeIn')){
+      if ($('#nav-container').hasClass('my-nav-fadeIn')) {
         $('#nav-container').removeClass('my-nav-fadeIn')
       }
     }
     else {
-      if(!$('#nav-container').hasClass('my-nav-fadeIn')){
+      if (!$('#nav-container').hasClass('my-nav-fadeIn')) {
         $('#nav-container').addClass('my-nav-fadeIn')
       }
-      if($('#nav-container').hasClass('my-nav-fadeOut')){
+      if ($('#nav-container').hasClass('my-nav-fadeOut')) {
         $('#nav-container').removeClass('my-nav-fadeOut')
       }
     }
@@ -114,7 +124,7 @@ $(function () {
 })
 
 // 每张图片加载完成时更新导航条对应元素位置
-$(window).on('load',function(){
+$(window).on('load', function () {
   InitDic()
 });
 
