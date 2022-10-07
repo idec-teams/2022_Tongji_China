@@ -8,15 +8,14 @@ html{
     position: relative;
     background-color:  rgb(246, 246, 246);
     font-size: 1rem;
-    scroll-padding-top: 55px;
 }
 
 /* 标题容器 */
 .my-nav-rank1 {
+    width: 80%;
     line-height: 1.5rem;
     margin-left: 2.5rem;
     margin-top: 2rem;
-    position: absolute;
     left: 0px;
     top:0px;
 }
