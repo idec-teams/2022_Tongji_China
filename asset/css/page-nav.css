@@ -1,6 +1,5 @@
-/* 页面内标题 */
 html{
-    scroll-padding-top:56px;
+    scroll-padding-top:54px;
 }
 
 .my-navbar {
@@ -10,7 +9,6 @@ html{
     font-size: 1rem;
 }
 
-/* 标题容器 */
 .my-nav-rank1 {
     width: 80%;
     line-height: 1.5rem;
@@ -25,11 +23,10 @@ html{
     padding-left: 2rem;
 }
 
-/* 标题栏 */
 .my-bar-rank1,.my-bar-rank2 {
     display: flex;
-    color: #868686;
     text-align: left;
+    color: #868686;
     padding: 0.3rem;
     text-decoration: none;
     font-family: 'Gilmer Light';
@@ -46,4 +43,35 @@ html{
 .my-bar-rank1:hover::marker,.my-bar-rank2:hover::marker,.awake::marker {
     color: #7F93C5;
     content: '▶';
+}
+
+/* 导航条淡入淡出动画 */
+.my-nav-fadeIn {
+    animation-name: my-nav-ani-fadeIn;
+    animation-duration: 0.5s;
+    opacity: 100%;
+}
+
+@keyframes my-nav-ani-fadeIn{
+    from{
+       opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.my-nav-fadeOut {
+    animation-name: my-nav-ani-fadeOut;
+    animation-duration: 0.5s;
+    opacity: 0%;
+}
+
+@keyframes my-nav-ani-fadeOut{
+    from{
+       opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
 }
