@@ -77,21 +77,22 @@ $(function(){
     }
     
     // 导航条浮动
-    window.onscroll=function(){
-        // 导航条浮动
-        if(page.scrollTop+$('#nav-bar').height() > $('#text-content')[0].offsetTop){
-            $('#nav-container')[0].style.paddingTop="3rem";
-            $('#nav-container')[0].style.position="fixed";
-        }
-        else{
-            $('#nav-container')[0].style.paddingTop="0rem";
-            $('#nav-container')[0].style.position="absolute";
-        }
-        
-        // 导航条跟随页面
-        // 最后一条导航
-        awakeCurrentNav()
+  window.onscroll = function () {
+    // 导航条浮动
+    if (page.scrollTop + $('#nav-bar').height() > $('#text-content')[0].offsetTop) {
+      $('#nav-container')[0].style.paddingTop = "3rem";
+      $('#nav-container')[0].style.position = "fixed";
+      $('.my-nav-rank1')[0].style.width = "20%";
     }
+    else {
+      $('#nav-container')[0].style.paddingTop = "0rem";
+      $('#nav-container')[0].style.position = "relative";
+      $('.my-nav-rank1')[0].style.width = "80%";
+    }
+    // 导航条跟随页面
+    // 最后一条导航
+    awakeCurrentNav()
+  }
 
     // 点击链接跳转
     $(".nav-link").click(function(){
@@ -104,6 +105,12 @@ $(function(){
     )
 })
 
-$(window).resize(function() {  
+// 页面（包括图片）加载完成时更新导航条对应元素位置
+$(window).on('load',function(){
+  InitDic()
+});
+
+// 页面分辨率变化时更新导航条对应元素位置
+$(window).resize(function () {
   InitDic()
 });

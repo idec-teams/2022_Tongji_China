@@ -29,6 +29,7 @@ html{
 .my-bar-rank1,.my-bar-rank2 {
     display: flex;
     color: #868686;
+    text-align: left;
     padding: 0.3rem;
     text-decoration: none;
     font-family: 'Gilmer Light';
