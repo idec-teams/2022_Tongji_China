@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,204 +19,209 @@
     <!-- bootstrap CSS-->
     <link href="../asset/bootstrap.min.css" rel="stylesheet">
     <script src="../asset/bootstrap.bundle.min.js"></script>
-    </head>
+</head>
+
 <body>
 
-<!-- 菜单栏 -->
-<div id="nav-bar">
-    <!-- 列表 -->
-    <ul>
-        <!-- logo -->
-        <li class="nav-logo">
-            <div id="logo">
-                <img src="../asset/img/logo.png" style="height: 50px">
+    <!-- 菜单栏 -->
+    <div id="nav-bar">
+        <!-- 列表 -->
+        <ul>
+            <!-- logo -->
+            <li class="nav-logo">
+                <div id="logo">
+                    <img src="../asset/img/logo.png" style="height: 50px">
+                </div>
+            </li>
+            <!-- 一级菜单 -->
+            <li class="nav-litem">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="nav-litem">
+                <a>Project</a>
+                <!-- 二级菜单 -->
+                <ul>
+                    <li><a href="../pages/background.html">Background</a></li>
+                    <li><a href="../pages/models.html">Models</a></li>
+                    <li><a href="../pages/supplementary.html">Supplementary Information</a></li>
+                    <li><a href="../pages/report.html">Report</a></li>
+                </ul>
+            </li>
+            <li class="nav-litem">
+                <a>Documentation</a>
+                <!-- 二级菜单 -->
+                <ul>
+                    <li><a href="../pages/protocols.html">Protocols</a></li>
+                    <li><a href="../pages/notebook.html">Notebook</a></li>
+                </ul>
+            </li>
+            <li class="nav-litem">
+                <a>Team</a>
+                <!-- 二级菜单 -->
+                <ul>
+                    <li><a href="../pages/members.html">Members</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 背景图片 -->
+    <div id="intro-bc" style="background-image: url(../asset/img/members-bg.png); background-size: 100% 250px;">
+        <div id="main-title" style="color: #16272F">Notebook</div>
+    </div>
+    <div id="cutoff"></div>
+
+    <!-- 内容 -->
+    <div class="container">
+        <div class="col-md-4 title">Students</div>
+        <!-- 第一行 -->
+        <div class="row">
+            <!-- img-cjx -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-cjx.jpg">
+                    <div class="mask">
+                        <div class="top-text">Jingxian Cai</div>
+                        <div class="bottom-text">
+                            Age: 19<br>
+                            Never stop. Keep moving.
+                        </div>
+                    </div>
+                </div>
             </div>
-        </li>
-        <!-- 一级菜单 -->
-        <li class="nav-litem">
-            <a href="../index.html">Home</a>
-        </li>
-        <li class="nav-litem">
-            <a>Project</a>
-            <!-- 二级菜单 -->
-            <ul>
-                <li><a href="../pages/background.html">Background</a></li>
-                <li><a href="../pages/models.html">Models</a></li>
-                <li><a href="../pages/supplementary.html">Supplementary Information</a></li>
-                <li><a href="../pages/report.html">Report</a></li>
-            </ul>
-        </li>
-        <li class="nav-litem">
-            <a>Documentation</a>
-            <!-- 二级菜单 -->
-            <ul>
-                <li><a href="../pages/protocols.html">Protocols</a></li>
-                <li><a href="../pages/notebook.html">Notebook</a></li>
-            </ul>
-        </li>
-        <li class="nav-litem">
-            <a>Team</a>
-            <!-- 二级菜单 -->
-            <ul>
-                <li><a href="../pages/members.html">Members</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<div id="intro-bc">
-    <div id="main-title">Members</div>
-</div>
-<div id="cutoff"></div>
-
-<!-- 内容 -->
-<div class="container">
-    <div class="col-md-4 title">Students</div>
-    <!-- 第一行 -->
-    <div class="row">
-        <!-- img-cjx -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-cjx.jpg">
-                <div class="mask">
-                    <div class="top-text">Jingxian Cai</div>
-                    <div class="bottom-text">
-                        Age: 19<br>
-                        Never stop. Keep moving.
+            <!-- img-wjy -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-wjy.jpg">
+                    <div class="mask">
+                        <div class="top-text">Jiaying Wen </div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            Science is both a way of thinking about the natural world and the sum of the information and
+                            theory result from such thinking.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-gzx -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-gzx.jpg">
+                    <div class="mask">
+                        <div class="top-text">Zhenxiang Guo</div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            “We'll find a way; we always have.”<br>
+                            ONE&ONLY
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- img-wjy -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-wjy.jpg">
-                <div class="mask">
-                    <div class="top-text">Jiaying Wen </div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        Science is both a way of thinking about the natural world and the sum of the information and theory result from such thinking.
+
+        <!-- 第二行 -->
+        <div class="row">
+            <!-- img-yjy -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-yjy.jpg">
+                    <div class="mask">
+                        <div class="top-text">Jinyi Ye</div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            There is no royal road to learning.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-zky -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-zky.jpg">
+                    <div class="mask">
+                        <div class="top-text">KeYao Zhao</div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            My brain has two parts: the left and the right. My left brain has nothing right, and my
+                            right brain has nothing left.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-chw -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="../asset/img/members-chw.jpg">
+                    <div class="mask">
+                        <div class="top-text">Huiwen Cheng</div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            Married to chemistry.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- img-gzx -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-gzx.jpg">
-                <div class="mask">
-                    <div class="top-text">Zhenxiang Guo</div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        “We'll find a way; we always have.”<br>
-                        ONE&ONLY
+
+        <!-- 第三行 -->
+        <div class="row">
+            <!-- img-lks -->
+            <div class="col-md-4">
+                <div class="photo-box" style="margin-bottom: 0;">
+                    <img src="../asset/img/members-lks.jpg">
+                    <div class="mask">
+                        <div class="top-text">Kingshuen Lu</div>
+                        <div class="bottom-text">
+                            Age: 19<br>
+                            Born to run. Born to die.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-fy -->
+            <div class="col-md-4">
+                <div class="photo-box" style="margin-bottom: 0;">
+                    <img src="../asset/img/members-fy.jpg">
+                    <div class="mask">
+                        <div class="top-text">Yi Fang</div>
+                        <div class="bottom-text">
+                            Age: 19<br>
+                            Every cloud has a silver lining.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-tgs -->
+            <div class="col-md-4">
+                <div class="photo-box" style="margin-bottom: 0;">
+                    <img src="../asset/img/members-tgs.jpg">
+                    <div class="mask">
+                        <div class="top-text">Guosheng Tong</div>
+                        <div class="bottom-text">
+                            Age: 20<br>
+                            Good good study, day day up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- advisor部分 -->
+        <div class="col-md-4 title">Advisors</div>
+        <div class="row">
+            <!-- img-kyz -->
+            <div class="col-md-4">
+                <div class="photo-box">
+                    <img src="https://static.igem.wiki/teams/4228/wiki/members-kyz.jpg">
+                    <div class="mask">
+                        <div class="top-text">Yunzhe Kang</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- 第二行 -->
-    <div class="row">
-        <!-- img-yjy -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-yjy.jpg">
-                <div class="mask">
-                    <div class="top-text">Jinyi Ye</div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        There is no royal road to learning.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- img-zky -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-zky.jpg">
-                <div class="mask">
-                    <div class="top-text">KeYao Zhao</div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        My brain has two parts: the left and the right. My left brain has nothing right, and my right brain has nothing left.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- img-chw -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="../asset/img/members-chw.jpg">
-                <div class="mask">
-                    <div class="top-text">Huiwen Cheng</div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        Married to chemistry.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 第三行 -->
-    <div class="row">
-        <!-- img-lks -->
-        <div class="col-md-4">
-            <div class="photo-box" style="margin-bottom: 0;">
-                <img src="../asset/img/members-lks.jpg">
-                <div class="mask">
-                    <div class="top-text">Kingshuen Lu</div>
-                    <div class="bottom-text">
-                        Age: 19<br>
-                        Born to run. Born to die.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- img-fy -->
-        <div class="col-md-4">
-            <div class="photo-box" style="margin-bottom: 0;">
-                <img src="../asset/img/members-fy.jpg">
-                <div class="mask">
-                    <div class="top-text">Yi Fang</div>
-                    <div class="bottom-text">
-                        Age: 19<br>
-                        Every cloud has a silver lining.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- img-tgs -->
-        <div class="col-md-4">
-            <div class="photo-box" style="margin-bottom: 0;">
-                <img src="../asset/img/members-tgs.jpg">
-                <div class="mask">
-                    <div class="top-text">Guosheng Tong</div>
-                    <div class="bottom-text">
-                        Age: 20<br>
-                        Good good study, day day up.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- advisor部分 -->
-    <div class="col-md-4 title">Advisors</div>
-    <div class="row">
-        <!-- img-kyz -->
-        <div class="col-md-4">
-            <div class="photo-box">
-                <img src="https://static.igem.wiki/teams/4228/wiki/members-kyz.jpg">
-                <div class="mask">
-                    <div class="top-text">Yunzhe Kang</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 </body>
+
 </html>
