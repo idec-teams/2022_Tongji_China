@@ -2,5 +2,5 @@
 $("#loader").css("display","block");
 // 页面加载完毕后隐藏加载动画
 $(window).on('load',function(){
-    $("#loader").css("display","none");
+   $("#loader").fadeOut(1000);
   });

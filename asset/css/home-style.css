@@ -1,9 +1,9 @@
-#home-bg{
+.home-bg{
     display: flex;
     background-color: burlywood;
-    height: 800px;
     background-image: url('../img/home-bro-bg.png');
     background-size:100% 100%;
+    height: 800px;
     background-attachment: fixed;
     width: 100%;
 }
@@ -64,4 +64,54 @@
     font-size: 1.3rem;
     line-height: 2rem;
     padding: 1% 0%;
+}
+
+/* 主页动画 */
+.moveUp {
+    animation-name: my-index-fadeIn;
+    animation-duration: 0.5s;
+    height: 55px;
+}
+
+.moveDown {
+    animation-name: my-index-fadeOut;
+    animation-duration: 0.5s;
+    height: 800px;
+}
+
+/* 上滑动画 */
+@keyframes my-index-fadeIn{
+    from{
+       height: 800px;
+    }
+    to{
+        height: 55px;
+    }
+}
+
+/* 下滑动画 */
+@keyframes my-index-fadeOut{
+    from{
+        height: 55px;
+    }
+    to{
+        height: 800px;
+    }
+}
+
+/* 淡入动画 */
+.my-fadeIn {
+    animation-name: my-fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    opacity: 100%;
+}
+
+@keyframes my-fadeIn{
+    from{
+       opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
