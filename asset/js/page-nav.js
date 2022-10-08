@@ -94,6 +94,7 @@ $(function () {
       $('.my-nav-rank1')[0].style.width = "20%";
     }
     else {
+      clear()
       $('#nav-container')[0].style.paddingTop = "0rem";
       $('#nav-container')[0].style.position = "relative";
       $('.my-nav-rank1')[0].style.width = "80%";
