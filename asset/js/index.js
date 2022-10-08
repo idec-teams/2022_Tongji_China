@@ -23,6 +23,29 @@ $(function () {
         return false;
     }
 
+    // 全部播放淡入动画
+    function allPlayFadeIn(){
+        $('.home-item').each(function (index) {
+            $(this).removeClass('my-fadeIn')
+            $(this).addClass('my-fadeIn')
+        })
+    }
+
+    // 播放元素淡入动画
+    function playFadeIn(){
+        $('.home-item').each(function (index) {
+            if(inTop){
+                return;
+            }
+            if(getInScreen($(this))&&!$(this).hasClass('my-fadeIn')){
+                $(this).addClass('my-fadeIn')
+            }
+            if(!getInScreen($(this))&&$(this).hasClass('my-fadeIn')){
+                $(this).removeClass('my-fadeIn')
+            }
+        })
+    }
+
     window.onscroll = function () {
         // 鼠标下滑事件
         if (inTop == true && getInTop() == false) {
@@ -36,13 +59,6 @@ $(function () {
         }
 
         // 元素淡入动画
-        $('.home-item').each(function (index) {
-            if(getInScreen($(this))&&!$(this).hasClass('my-fadeIn')){
-                $(this).addClass('my-fadeIn')
-            }
-            if(!getInScreen($(this))&&$(this).hasClass('my-fadeIn')){
-                $(this).removeClass('my-fadeIn')
-            }
-        })
+        playFadeIn()
     }
 })

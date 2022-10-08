@@ -12,6 +12,7 @@
 
     <!-- CSS, by FY -->
     <link href="asset/css/footer.css" rel="stylesheet">
+    <link href="asset/css/loader.css" rel="stylesheet">
     <link href="asset/css/home-style.css" rel="stylesheet">
 
     <!-- JS, by TP -->
@@ -19,6 +20,29 @@
 </head>
 
 <body>
+    <!-- 页面加载动画 -->
+    <div id="loader">
+        <div aria-busy="true" aria-label="Loading" role="progressbar" class="loader-container">
+            <div class="swing">
+                <div class="swing-l"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="swing-r"></div>
+            </div>
+            <div class="loader-shadow">
+                <div class="shadow-l"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="shadow-r"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- 菜单栏 -->
     <div id="nav-bar">
@@ -69,7 +93,7 @@
         <!-- 分割线 -->
         <div id="home-cutoff" style="margin-top: 100px;"></div>
 
-        <div class="home-item-left home-item">
+        <div class="home-item-left">
             <div class="img-in-item">
                 <img src="asset/img/home-bro-1.png" />
             </div>
@@ -91,7 +115,7 @@
         <!-- 分割线 -->
         <div id="home-cutoff"></div>
 
-        <div class="home-item-right home-item">
+        <div class="home-item-right">
             <div class="text-in-item-left">
                 <div class="content-in-item">
                     <div class="item-title">Traditional production technology</div>
@@ -185,8 +209,9 @@
         </div>
     </footer>
 
-    <!-- JS, by FY-->
+    <!-- JS, by FY -->
     <script src="asset/js/index.js"></script>
+    <script src="asset/js/loader.js"></script>
 </body>
 
 </html>
