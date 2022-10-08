@@ -9,10 +9,15 @@
     <link href="../asset/css/nav.css" rel="stylesheet">
     <link href="../asset/css/basic.css" rel="stylesheet">
     <link href="../asset/css/content.css" rel="stylesheet">
-    
+
     <!-- CSS, by FY -->
     <link href="../asset/css/page-nav.css" rel="stylesheet">
     <link href="../asset/css/loader.css" rel="stylesheet">
+    <link href="../asset/css/footer.css" rel="stylesheet">
+    <link href="../asset/css/table.css" rel="stylesheet">
+
+    <!-- Outer File -->
+    <script src="../asset/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -39,6 +44,7 @@
             </div>
         </div>
     </div>
+
     <!-- 菜单栏 -->
     <div id="nav-bar">
         <!-- 列表 -->
@@ -81,8 +87,284 @@
         </ul>
     </div>
 
+    <!-- 主页背景 -->
+    <div id="intro-bc">
+        <div id="main-title">Model</div>
+    </div>
+    <div id="cutoff"></div>
+
+    <div id="content">
+        <!--  页面导航栏  -->
+        <nav id="navbar-igem" class="my-navbar">
+            <nav id="nav-container" class="my-nav-rank1">
+                <a class="nav-link my-bar-rank1" href="#abstract">Abstract</a>
+                <a class="nav-link my-bar-rank1" href="#search">Search for mutable sites to <br>obtain superior variants</a>
+                <a class="nav-link my-bar-rank1" href="#exploration">Exploration of upper relationship <br>between residues of <br>stem
+                    bromelain</a>
+                <a class="nav-link my-bar-rank1" href="#substrate">Substrate docking of stem<br> bromelain and its variant</a>
+                <a class="nav-link my-bar-rank1" href="#molecular">Molecular Dynamics Simulation Analysis</a>
+            </nav>
+        </nav>
+        <!-- 页面吉祥物 -->
+        <div id="page-pet">
+            <img src="../asset/img/page-pet.png">
+        </div>
+
+        <!-- 正文 -->
+        <div id="text-content">
+            <!-- Abstract -->
+            <div id="abstract">
+                <div class="page-title-rank1">Abstract</div>
+                <p>
+                    In order to obtain mutants with better properties, we built protein models and calculated their
+                    mutable sites. By scoring the mutated models, we determined which ones were the best mutants. By
+                    calculating the energy of the molecules at docking, we can also verify whether the mutants are more
+                    active when reacting with the substrate.
+                </p>
+
+                <!-- 表格1 -->
+                <div class="table-container">
+                    <div class="table-border">
+                        <div class="table-title">Table 1: Mutable structural residues</div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Site</th>
+                                    <th scope="col">Original residues</th>
+                                    <th scope="col">Mutational residues</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>18</td>
+                                    <td>Lys</td>
+                                    <td>Arg or Gln</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>20</td>
+                                    <td>Gln</td>
+                                    <td>Arg</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>51</td>
+                                    <td>Gln</td>
+                                    <td>Ala</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>159</td>
+                                    <td>Val</td>
+                                    <td>Phe or Leu</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 表格2 -->
+                <div class="table-container">
+                    <div class="table-border">
+                        <div class="table-title">Table 2: Mutable nonstructural resideus</div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Site</th>
+                                    <th scope="col">Original residues</th>
+                                    <th scope="col">Mutational residues</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>16</td>
+                                    <td>Ser</td>
+                                    <td>Gly or Asp</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>161</td>
+                                    <td>Thr</td>
+                                    <td>Phe or Leu</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>172</td>
+                                    <td>Gln</td>
+                                    <td>Ile</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Search for mutable sites to obtain superior variants -->
+            <div id="search">
+                <div class="page-title-rank1 models-title">Search for mutable sites to obtain superior variants</div>
+                <p>
+                    Table 1 and 2 show the point mutation sites provided by Hotspot Wizard. In the search for point
+                    mutations, reference was made to the original analysis of residue 291. All conserved residues in
+                    enzymes are composed of polar, nonpolar, acidic and basic groups. Most of the conserved residues,
+                    such as Tyr, Asn, Gly, Thr, Gln and Cys, belong to polar groups, followed by non-polar groups (Phe,
+                    Trp, Ala, Val and Pro), acidic groups (Glu and Asp) and basic groups (Arg and His). So we evaluated
+                    some functional residues as well as other residues.
+                </p>
+                <p>
+                    Rosseta's Relax module was used to score these point mutation models. The initial model energy was
+                    calculated as -607.691. The energy of p.(K18R) was -332.407 and the structure was
+                    disorganized（Figure 1a）, so the mutation scheme has been abandoned. The possible reason was that
+                    site 18 was mutated into Arg, and the surrounding area was positively charged, while Arg was
+                    negatively charged in the past, and the energy was too high, so the structure appeared to fall
+                    apart.
+                </p>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 1 a: Structures that disintegrated after mutation(p.(K18R))</div>
+                </div>
+                <p>
+                    The energy of the p.(K18G)was -605.077. Although its structure did not fall apart, its energy
+                    increased and thus it was abandoned. The structure of p.(Q20R) was disintegrated after mutation, so
+                    it was abandoned too. (Figure 1b)
+                </p>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 1 b: Structures that disintegrated after mutation(p.(Q20R))</div>
+                </div>
+                <p>
+                    However, the energy of p.(S16G) was -610.561 after mutation. Meanwhile, compared with the structure
+                    before mutation, its RMSD value was 0.683, so it was selected for further mutation.（Figure 1 c）
+                </p>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 1 c: Stable structural mutants(p.(S16G))</div>
+                </div>
+                <p>
+                    Finally, we screened the model with Leu mutation at site 67, and its energy was -614.826. Compared
+                    with the original model, the RMSD value was 0.97. Its reduced energy and relatively stable structure
+                    suggested that it might be a better variant of bromelain, as the experiments would prove.
+                </p>
+            </div>
+
+            <!-- Abstract -->
+            <div id="exploration">
+                <div class="page-title-rank1 models-title">Exploration of upper relationship between residues of stem
+                    bromelain</div>
+                <p>
+                    The definition of upper relationship means that some single mutations of A are unfavorable, but the
+                    addition of B mutation will have better performance than single B mutation, which means that B has
+                    upper relationship with A. After calculating by Relax, we found that the Gly single mutation at site
+                    16 had an upper relationship with the Leu single mutation at site 67: when Leu single mutation was
+                    detected, the structure was disordered, RM value was 1.4, and energy was -348. But with the addition
+                    of Gly, the structure stabilizes and the energy drops to -614.82. At the same time, the single
+                    mutation of Gly at site 16 has an upper relationship with the single mutation of Val at site 64: the
+                    energy of single mutation of Val is -599, while the energy of mutation of both Gly and Val decreases
+                    to -608.
+                </p>
+            </div>
+
+            <!-- Abstract -->
+            <div id="substrate">
+                <div class="page-title-rank1 models-title">Substrate docking of stem bromelain and its variant</div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 3: Model of wild-type binding to BAEE</div>
+                </div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 3 b: Energy of binding（Wild-type）</div>
+                </div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 3 c: Model of BAEE binding to mutant</div>
+                </div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 3 d: Energy of binding（Mutant）</div>
+                </div>
+                <p>
+                    After literature review and network search, BAEE was finally determined as the reaction substrate of
+                    bromelain, and its docking and energy calculation were performed with bromelain and mutated
+                    variants. The calculations were done online by PDBePISA.
+                </p>
+                <p>
+                    Finally, the binding energy of bromelain in wild-type was -125.09, while that in mutant was -126.26,
+                    which decreased. This also proves that the stem bromelain variant we developed is more easily bound
+                    to the substrate and its reactivity is enhanced.
+                </p>
+                <p>
+                    （Figure 3a, b, c and d）
+                </p>
+            </div>
+
+            <!-- Abstract -->
+            <div id="molecular">
+                <div class="page-title-rank1 models-title">Molecular Dynamics Simulation Analysis</div>
+                <p>
+                    A molecular dynamics simulation was conducted to analyze the binding stability of Stem
+                    Bromelain(212aa) and BAEE complexes, where multiple descriptors were analyzed to understand the
+                    flexible and stable nature of the complexes. The system has been balanced in advance (the result of
+                    temperature and pressure balance is shown in below.(Figure4 a, b, c and d)
+                </p>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 4 a , the result of temperature balance</div>
+                </div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 4 b, the result of pressure balance</div>
+                </div>
+                <p>
+                    After the whole system was balanced, the molecular simulation started to run, which took 10h (1ns)
+                    in total.
+                </p>
+                <p>
+                    RMSD and RMSF analysis were performed on the simulated results, and the results were shown in the
+                    figure below. It can be seen that Stem bromelain(212) has good reactivity with BAEE in neutral
+                    environment. The RMSD value was less than 0.4, and the RMSD value structure did not change much
+                    before and after simulation, indicating that the reaction between the complex was very stable. At
+                    the same time, the RMSF value changed greatly, which reflected that the atomic motion of Stem
+                    bromelain (212) was relatively free when it reacted with BAEE.
+                </p>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text"> Figure 4 c , the RMSD of Stem Bromelain(212) and BAEE complex</div>
+                </div>
+                <div class="content-imgbox">
+                    <img src="../asset/img/background-application-1.png">
+                    <div class="img-text">Figure 4d , the comparing RMSD of Stem Bromelain(212) and BAEE complex</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <!-- 头部波浪效果 -->
+        <div class="footer-header">
+            <svg class="footer-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="footer-gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="footer-parallax">
+                    <use xlink:href="#footer-gentle-wave" x="48" y="0" fill="#9FD2A4" />
+                    <use xlink:href="#footer-gentle-wave" x="48" y="3" fill="#FFBD80" />
+                    <use xlink:href="#footer-gentle-wave" x="48" y="5" fill="#FFED60" />
+                    <use xlink:href="#footer-gentle-wave" x="48" y="7" fill="#FDF4AC" />
+                </g>
+            </svg>
+        </div>
+    </footer>
 
     <!-- JS, by FY -->
+    <script src="../asset/js/page-nav.js"></script>
     <script src="../asset/js/loader.js"></script>
 </body>
 

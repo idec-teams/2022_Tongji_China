@@ -99,24 +99,6 @@ $(function () {
       $('.my-nav-rank1')[0].style.width = "80%";
     }
 
-    // 导航条跟从页尾浮动
-    if (page.scrollTop + $('#nav-bar').height() + 55 + $('#nav-container').height() > $('footer')[0].offsetTop) {
-      if (!$('#nav-container').hasClass('my-nav-fadeOut')) {
-        $('#nav-container').addClass('my-nav-fadeOut')
-      }
-      if ($('#nav-container').hasClass('my-nav-fadeIn')) {
-        $('#nav-container').removeClass('my-nav-fadeIn')
-      }
-    }
-    else {
-      if (!$('#nav-container').hasClass('my-nav-fadeIn')) {
-        $('#nav-container').addClass('my-nav-fadeIn')
-      }
-      if ($('#nav-container').hasClass('my-nav-fadeOut')) {
-        $('#nav-container').removeClass('my-nav-fadeOut')
-      }
-    }
-
     // 导航条跟随页面
     // 唤醒当前导航条
     awakeCurrentNav()
